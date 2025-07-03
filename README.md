@@ -104,11 +104,25 @@ Example Response:
 
 ---
 
-## 📂 Datasets
-See `src/data_generation/` for generating your own datasets using GPT.  
-Example datasets used:
-- Kaggle Resume Dataset
-- Custom GPT-generated similarity pairs
+## 📂 Datasets Used
+
+MatchPulse was trained and evaluated on a combination of public and synthetic datasets:
+
+- ✅ [**Kaggle Resume Dataset**](https://www.kaggle.com/datasets/sumukhbhuwad/indian-resume-dataset)  
+  Used for initial resume text samples and entity examples.
+  
+- ✅ [**Job Descriptions Dataset (Open Source)**](https://www.kaggle.com/datasets/gauravduttakiit/job-descriptions-dataset)  
+  Public job descriptions covering various tech roles.
+
+- ✅ **GPT-Generated Synthetic Similarity Dataset**  
+  Programmatically generated using OpenAI's GPT models to cover balanced positive and negative resume–job matches.
+
+- ✅ **Weakly Supervised Annotations (Snorkel + Heuristics)**  
+  Labeling functions built for skills, degrees, designations, and years of experience.
+
+- ✅ **Self-Annotated Resume Corpus**  
+  Additional resume texts manually labeled for fine-tuning and evaluation.
+
 
 ---
 
